@@ -55,8 +55,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Work experience</h3>
+					<p>Take a look below at my professional career in the IT area.</p>
 				</header>
 
 				<div class="gallery">
@@ -64,7 +64,7 @@ const projects = (await getCollection('work'))
 						{
 							projects.map((project) => (
 								<li>
-									<PortfolioPreview project={project} />
+									<PortfolioPreview project={project}/>
 								</li>
 							))
 						}
@@ -81,9 +81,9 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3> Technologies</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
+						I have been fortunate to work with several technical tools during my professional and academic curse. Take
 						a look below to learn more.
 					</p>
 				</header>
@@ -91,7 +91,7 @@ const projects = (await getCollection('work'))
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['HMTL/CSS', 'React', 'SQL','PHP', 'Python','Java','PowerBI'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
